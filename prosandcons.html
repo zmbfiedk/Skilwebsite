@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout</title>
+    <style>
+        article ul {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+        }
+        
+        article li {
+          background-color: #f4f4f4;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: transform 0.3s ease;
+          height: 100%;
+          font-size: 14px;
+        }
+        
+        article li:hover {
+          transform: scale(1.05);
+        }
+        
+        @media screen and (max-width: 768px) {
+          article ul {
+            grid-template-columns: 1fr;
+          }
+        }
+        
+        @media screen and (max-width: 600px) {
+          article ul {
+            grid-template-columns: 1fr;
+          }
+        
+          article li {
+            font-size: 12px;
+            padding: 15px;
+          }
+        }
+        
+        @media screen and (max-width: 150px) {
+          body {
+            padding: 5px; /* Reduce padding for very small screens */
+          }
+        
+          article ul {
+            grid-template-columns: 1fr; /* Stack everything into a single column */
+          }
+        
+          article li {
+            font-size: 8px; /* Reduce font size to fit the narrow screen */
+            padding: 5px; /* Reduce padding to save space */
+          }
+        
+          header, nav, footer {
+            font-size: 10px; /* Adjust header, nav, and footer font size */
+            padding: 5px; /* Adjust padding for narrow screens */
+          }
+        
+          .top {
+            width: 40px; /* Adjust top button size */
+            height: 40px;
+            font-size: 10px; /* Smaller text for the top button */
+          }
+        }
+        </style>
+        
+        
+        
+</head>
+
+<body>
+    <header id="h1navbar">
+        <nav>
+            
+            <div class="nav-extra-info">    
+               <ul>
+                <a href="home.html"><li>home</li></a>
+                <a href="index.html"><li>workout</li></a>
+                <a href="music.html"><li>music</li></a>
+                <a href="prosandcons.html"><li>pros and cons</li></a>
+               </ul>
+               <button class="dark-mode-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+            </div>
+        </nav>
+        </header>
+<article>
+    <h1>Pros and Cons of Working Out</h1>
+
+    <p>Working out is an essential part of maintaining a healthy lifestyle. However, like anything in life, it comes with both benefits and potential drawbacks. Understanding the pros and cons can help you find a balance and make the most of your fitness routine.</p>
+
+    <h2>Pros of Working Out</h2>
+    <ul class="ul2">
+        <li><strong>Improves Physical Health:</strong> Regular exercise strengthens your heart, muscles, and bones. It also helps regulate blood pressure and reduce the risk of chronic diseases such as diabetes, heart disease, and obesity.</li>
+        <li><strong>Boosts Mental Health:</strong> Exercise releases endorphins, which are chemicals in the brain that act as natural mood lifters. It can reduce symptoms of depression and anxiety and improve overall mental well-being.</li>
+        <li><strong>Increases Energy Levels:</strong> While it may seem counterintuitive, regular physical activity can actually increase your energy levels. Over time, your body adapts, and you may feel more energetic throughout the day.</li>
+        <li><strong>Helps with Weight Management:</strong> Combining physical activity with a healthy diet is one of the most effective ways to manage or lose weight. Exercise helps burn calories and build muscle, which can enhance metabolism.</li>
+        <li><strong>Improves Sleep Quality:</strong> Regular exercise can help you fall asleep faster and enjoy deeper sleep. Better sleep, in turn, enhances recovery and overall performance in workouts.</li>
+        <li><strong>Promotes Social Interaction:</strong> For some, working out in groups or classes provides an opportunity to meet new people and build a supportive community.</li>
+    </ul>
+
+    <h2>Cons of Working Out</h2>
+    <ul class="ul2">
+        <li><strong>Risk of Injury:</strong> Without proper form, guidance, or equipment, you can be prone to injuries such as strains, sprains, or even more serious injuries like fractures.</li>
+        <li><strong>Time Commitment:</strong> Regular exercise can require a significant time commitment, which can be difficult to maintain with a busy schedule. Finding time for workouts can sometimes feel challenging.</li>
+        <li><strong>Costs:</strong> Gym memberships, personal trainers, workout gear, and supplements can add up. Some forms of exercise may be expensive depending on the equipment or location.</li>
+        <li><strong>Overtraining:</strong> Exercising too much without allowing for recovery can lead to burnout, fatigue, and even decreased performance. Overtraining can also increase the risk of injury.</li>
+        <li><strong>Boredom or Lack of Enjoyment:</strong> Not all exercises are enjoyable for everyone. Some people may find certain workout routines boring, which can lead to decreased motivation over time.</li>
+        <li><strong>Plateaus in Progress:</strong> Over time, your body may get used to certain workouts, leading to plateaus where it becomes difficult to see continued progress.</li>
+    </ul>
+
+    <h2>Finding the Right Balance</h2>
+    <p>To make the most out of your workout routine, it's important to strike a balance. Focus on exercises that you enjoy and that suit your fitness goals. Additionally, allow time for rest and recovery to avoid burnout and overtraining. If you're unsure about your form or exercise plan, consider seeking advice from a fitness professional to minimize injury risks.</p>
+
+</article>
+    <a class="top" href="#h1navbar">TOP</a>
+
+<footer>
+    <h1>Contact Information</h1>
+    <div class="footer-extra-info">
+        <p>Email: arthurhgarcia10@gmail.com</p>
+        <p>Instagram: insta:zmbfiedk</p>
+    </div>
+</footer>
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+</script>
+</body>
+</html>

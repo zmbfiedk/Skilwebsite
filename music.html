@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout</title>
+    <style>
+        article ul {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+        }
+        
+        article li {
+          background-color: #f4f4f4;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: transform 0.3s ease;
+          height: 100%;
+          font-size: 14px;
+        }
+        
+        article li:hover {
+          transform: scale(1.05);
+        }
+        
+        @media screen and (max-width: 768px) {
+          article ul {
+            grid-template-columns: 1fr;
+          }
+        }
+        
+        @media screen and (max-width: 600px) {
+          article ul {
+            grid-template-columns: 1fr;
+          }
+        
+          article li {
+            font-size: 12px;
+            padding: 15px;
+          }
+        }
+        
+        @media screen and (max-width: 150px) {
+          body {
+            padding: 5px; /* Reduce padding for very small screens */
+          }
+        
+          article ul {
+            grid-template-columns: 1fr; /* Stack everything into a single column */
+          }
+        
+          article li {
+            font-size: 8px; /* Reduce font size to fit the narrow screen */
+            padding: 5px; /* Reduce padding to save space */
+          }
+        
+          header, nav, footer {
+            font-size: 10px; /* Adjust header, nav, and footer font size */
+            padding: 5px; /* Adjust padding for narrow screens */
+          }
+        
+          .top {
+            width: 40px; /* Adjust top button size */
+            height: 40px;
+            font-size: 10px; /* Smaller text for the top button */
+          }
+        }
+        </style>
+        
+        
+</head>
+
+<body>
+    <header id="h1navbar">
+        <nav>
+            
+            <div class="nav-extra-info">    
+               <ul>
+                <a href="home.html"><li>home</li></a>
+                <a href="index.html"><li>workout</li></a>
+                <a href="music.html"><li>music</li></a>
+                <a href="prosandcons.html"><li>pros and cons</li></a>
+               </ul>
+               <button class="dark-mode-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+            </div>
+        </nav>
+        </header>
+    <article>
+
+    <h1>Music in the Gym</h1>
+
+    <p>Music plays a vital role in enhancing workout experiences, making physical activities more engaging and enjoyable. Whether you’re lifting weights, running on the treadmill, or doing a high-intensity workout, music can be the perfect companion. Let's explore some of the main reasons why music is so important in the gym:</p>
+
+    <h2>Benefits of Music During Workouts</h2>
+    <ul class="ul2">
+        <li><strong>Boosts Motivation:</strong> Upbeat songs can push you to keep going, especially when you feel like giving up. A powerful chorus or a fast tempo can give you the energy to perform better.</li>
+        <li><strong>Helps with Focus:</strong> Music can help block out distractions, allowing you to concentrate fully on your workout. This is especially useful in a busy gym environment.</li>
+        <li><strong>Maintains Rhythm:</strong> Keeping a steady rhythm is important for exercises like running or cycling. Music with a consistent beat helps maintain a pace, which can improve performance and endurance.</li>
+        <li><strong>Reduces Fatigue:</strong> Listening to your favorite tunes can reduce the feeling of fatigue by distracting your mind from the physical strain you're putting on your body.</li>
+        <li><strong>Enhances Mood:</strong> A good playlist can make workouts feel fun and enjoyable, which in turn boosts your mood and helps you push through difficult exercises.</li>
+    </ul>
+
+    <h2>Choosing the Right Playlist</h2>
+    <p>The type of music you listen to can significantly impact your workout. Here are some tips for selecting the right playlist:</p>
+    <ul class="ul2">
+        <li>For high-intensity workouts like HIIT or weightlifting, go for fast-paced, energetic music like rock, EDM, or hip-hop.</li>
+        <li>If you're doing cardio or endurance exercises, choose songs with a steady beat to help maintain your pace, such as pop or dance tracks.</li>
+        <li>For relaxation exercises like yoga or stretching, opt for calm and soothing music, like classical or ambient tunes.</li>
+        <li>It's important to update your playlist regularly to keep things fresh and exciting. Listening to the same songs repeatedly can make your workout feel monotonous.</li>
+    </ul>
+
+</article>
+
+<a class="top" href="#h1navbar">TOP</a>
+
+<footer>
+    <h1>Contact Information</h1>
+    <div class="footer-extra-info">
+        <p>Email: arthurhgarcia10@gmail.com</p>
+        <p>Instagram: insta:zmbfiedk</p>
+    </div>
+</footer>
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+</script>
+</body>
+</html>
